@@ -5,13 +5,13 @@ const ModalContent = ({ handleModalState, open }) => {
 
   return ReactDOM.createPortal(
     <div
-      className={` absolute inset-0 flex justify-center items-center 
+      className={` absolute inset-0 flex justify-center items-center overflow-hidden
       ${open ? "visible bg-black/10" : "invisible"}
       `}
       onClick={handleModalState}
     >
       <div
-        className={`bg-white md:w-[500px] md:p-7 flex flex-col gap-y-4 rounded shadow-xl transition-all ease-in-out duration-200
+        className={`bg-white sm:w-[500px] xs:w-[290px]  md:p-7 p-4 xs:mx-4 flex flex-col gap-y-4 rounded shadow-xl transition-all ease-in-out duration-200
          ${open ? "scale-100 opacity-100" : "scale-150 opacity-0"}
          `}
         onClick={handlePropagation}

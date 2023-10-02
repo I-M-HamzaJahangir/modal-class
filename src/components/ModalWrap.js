@@ -6,15 +6,14 @@ const ModalWrap = () => {
   const handleModalState = () => setOpen(!open);
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center h-screen ">
       <button
         onClick={handleModalState}
         type="button"
-        className="bg-indigo-600 text-white font-mono text-base px-7 py-2 border border-indigo-500 rounded-sm uppercase hover:shadow-xl hover:shadow-indigo-600/50 hover:-translate-y-1 transition-all ease-in"
+        className="bg-indigo-600 text-white font-mono  text-base px-7  py-2 border border-indigo-500 rounded-sm uppercase hover:shadow-xl hover:shadow-indigo-600/50 hover:-translate-y-1 transition-all ease-in"
       >
         Place Order
       </button>
-
       <ModalContent handleModalState={handleModalState} open={open} />
     </div>
   );
